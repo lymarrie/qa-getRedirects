@@ -44,7 +44,7 @@ import {
         "dm_directoryParents.c_addressRegionDisplayName",
       ],
       localization: {
-        locales: ["en", "es"],
+        locales: ["en"],
       },
       transform: {
         replaceOptionValuesWithDisplayNames: ["paymentOptions"],
@@ -62,7 +62,7 @@ import {
   };
   
   export const getRedirects: GetRedirects<TemplateProps> = ({ document }) => {
-    return [`?${document.id.toString()}`];
+    return [`?store=${document.id.toString()}`];
   };
 
   
