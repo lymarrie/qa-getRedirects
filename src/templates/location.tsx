@@ -61,9 +61,10 @@ import {
         }-${document.id.toString()}`;
   };
   
-  export const getRedirects: GetRedirects<TemplateProps> = ({ document }) => {
-    return [`index.html?store=${document.id.toString()}`];
-  };
+  // export const getRedirects: GetRedirects<TemplateProps> = ({ document }) => {
+  //   // return [`?store=${document.id.toString()}`];
+  //   return [`index.html?store=${document.id.toString()}`];
+  // };
 
   
   export const getHeadConfig: GetHeadConfig<TemplateRenderProps> = ({
