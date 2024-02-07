@@ -62,7 +62,7 @@ import {
   };
   
   export const getRedirects: GetRedirects<TemplateProps> = ({ document }) => {
-    return [`?store=${document.id.toString()}`];
+    return [`index.html?store=${document.id.toString()}`];
   };
 
   
